@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body {
+    background: linear-gradient( #FFFACD);
+     font-family: "Indie Flower";
+    margin: 0;
+    height: 100vh;
+}
+
+.container-sky {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.lantran-all {
+    position: absolute;
+    bottom: -15%;
+    animation: fly 10s infinite linear;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.lantran-all img {
+    filter: drop-shadow(0px 4px 6px rgba(0,0,0,0.2));
+    width: 100%; 
+    height: auto;
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(250deg);
+        opacity: 0;
+    }
+}
+
+.love-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #5D4037; 
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.love-text h1 {
+    font-size: 5.5em; 
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.love-text p {
+    font-size: 3em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 0;
+}
+
+.love-text footer {
+    font-size: 2em;
+    margin-top: 20px;
+    opacity: 0.8;
+}
